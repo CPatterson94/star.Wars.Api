@@ -1,13 +1,14 @@
 import { useSelector } from "react-redux";
 import People from "./PeoplePg";
+import { useState } from "react";
 
-function PeoplePg() {
-  const allPeople = useSelector((state) => state.People);
+function PeoplesPg() {
+  const allPeople = useSelector((state) => state.people);
 
   return (
     <>
       <div className="wrapper">
-        {fishes.length < 1 ? (
+        {PeoplesPg.length < 1 ? (
           <h1>No Characters Currently...</h1>
         ) : (
           allPeople.map((i) => <People key={i.name} data={i} />)
@@ -16,3 +17,4 @@ function PeoplePg() {
     </>
   );
 }
+export default PeoplesPg;

@@ -5,7 +5,8 @@ import PeoplesPg from "./components/PeopleFolder/PeoplesPg";
 
 function App() {
   const { isLoading } = useGetAllPeopleQuery();
-
+  const { data } = useGetAllPeopleQuery();
+  console.log(data);
   return (
     <>
       {/* <Nav /> */}
@@ -19,7 +20,7 @@ function App() {
           <Route path={"/people/name"} element={<SinglePersonPage />} />
         </Routes>
       )}
-      <h1>Hello</h1>
+      <h1>Hello There!</h1>
     </>
   );
 }
