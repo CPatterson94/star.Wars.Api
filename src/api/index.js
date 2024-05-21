@@ -38,9 +38,9 @@ export const api = createApi({
 });
 
 export const {
-  useGetAllPeople,
-  //   useGetAllPlanets,
-  //   useGetAllVehicles,
-  //   useGetAllFilms,
-  //   useGetAllStarships,
+  useGetAllPeopleQuery,
+  //   useGetAllPlanetsQuery,
+  //   useGetAllVehiclesQuery,
+  //   useGetAllFilmsQuery,
+  //   useGetAllStarshipsQuery,
 } = api;

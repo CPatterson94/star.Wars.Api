@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./index.css";
+import { useGetAllPeopleQuery } from "./api";
 
 function App() {
   return (
